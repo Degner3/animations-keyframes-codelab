@@ -11,3 +11,26 @@
   border: 2px solid black;
   border-radius: 0.4rem;
 }
+
+
+
+
+.validCheck {
+  border: 2px solid green;
+}
+
+
+.errorShake {
+  border: 2px solid red;
+}
+
+
+@keyframes error {
+
+}
+
+
+@keyframes valid {
+
+}
+ 
