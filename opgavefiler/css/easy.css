@@ -9,11 +9,30 @@ height: 100px;
 text-align: center;
 border-radius: 50px;
 
+
 }
 
 .pop:hover{
- 
+  animation-name: popUp;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
 }
+
+@keyframes popUp {
+
+  from {
+    transform: scale(100%);
+  }
+
+  to {
+    transform: scale(110%);
+  }
+
+}
+
+
+
+
 
 .popTwo{
   background-color: rgb(241, 206, 7);
@@ -25,9 +44,26 @@ border-radius: 50px;
 }
 
 .popTwo:hover{
-
+  animation-name: popUpDown;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
 }
 
+@keyframes popUpDown {
+
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+
+}
 
 
 
@@ -41,12 +77,12 @@ border-radius: 50px;
 }
 
 .popThree:hover{
- 
+  animation-name: popUpDown;
   animation-duration: 500ms;
   animation-timing-function: ease;
+  animation-iteration-count: infinite;
 
 }
-
 
 
 

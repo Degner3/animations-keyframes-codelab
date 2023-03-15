@@ -20,10 +20,19 @@ animation-fill-mode: both;
 }
 
 .animateRight{
-
   animation-name: goRight;
 }
 
+@keyframes goLeft {
+  
+}
+
+@keyframes goRight {
+  
+  from {transform: translateX(0px)}
+  to {transform: translateX(400px)}
+  
+}
 
 
 
@@ -46,7 +55,7 @@ animation-fill-mode: both;
 }
 
 .hardBalls{
-  background-color: rgb(155, 13, 13);
+background-color: rgb(155, 13, 13);
 color:antiquewhite;
 width: 100px;
 height: 100px;
@@ -62,18 +71,70 @@ animation-fill-mode: both;
 }
 
 
-
+.animateRight{
+  animation-name: goRight;
+}
 
 
 @keyframes goRight{
   from {transform: translateX(0px)}
-  to {transform: translateX(500px)}
+  to {transform: translateX(400px)}
 }
 
 @keyframes goLeft{
   from {transform: translateX(0px)}
-  to {transform: translateX(-500px)}
+  to {transform: translateX(-400px)}
 }
 
   
   
+/*Opgave 3*/
+
+
+
+.loopRight {
+  animation-name: loopRight;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.loopLeft {
+  animation-name: loopLeft;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  
+}
+
+
+
+@keyframes loopRight {
+  
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(400px) scale(25%);
+    
+  }
+}
+
+
+@keyframes loopLeft {
+
+  0% {
+    transform: translateX(0px) scale(25%);
+  }
+
+  100% {
+    transform: translateX(400px);
+    
+  }
+  
+}
