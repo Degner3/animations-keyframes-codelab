@@ -1,33 +1,16 @@
 /* opgave 1 */
 
-// const myInput = document.getElementById('myInput');
+const myInput = document.getElementById('myInput');
 // console.log(myInput);
 const mySubmit = document.getElementById('submitBut');
 // console.log(mySubmit);
 
 mySubmit.addEventListener('sumbit', (e) => {
 
-    e.preventDefault();
-    console.log('sumbit', (e));
-    const myInput = document.getElementById('myInput');
 
-    if (myInput.value !="" && 
-    myInput.value.length > 6 && 
-    myInput.value.includes('@') && 
-    myInput.value.includes('dk')) {
-        myInput.classList.remove("errorShake");
-        myInput.classList.add("validCheck");
-        
-    }
-    else {
-        myInput.classList.add('errorShake');
-        myInput.classList.remove('validCheck');
-    }
+    
 
-    console.log(myInput);
-
-
-})
+});
 
 
 

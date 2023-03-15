@@ -16,21 +16,22 @@
 
 
 .validCheck {
-  border: 2px solid green;
+  border: 5px solid green;
+  animation-name: valid;
 }
 
 
 .errorShake {
-  border: 2px solid red;
-}
-
-
-@keyframes error {
-
+  border: 5px solid red;
+  animation-name: error;
 }
 
 
 @keyframes valid {
+
+}
+
+@keyframes error {
 
 }
  
